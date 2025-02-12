@@ -31,11 +31,12 @@ title: "Natilê Gourmet"
 avatar: "./images/profile.jpeg"
 
 # Name section text
-name: "@natilegourmet"
+name: "Natilê"
 
 # Tagline section text
 tagline: >-
-    Em breve
+    Em breve sobremesas próximo a você!
+    Campo Grande - RJ
 
 # List of links
 # icon: Use Font Awesome icons (https://fontawesome.com/search?o=r&m=free)
@@ -48,16 +49,16 @@ links:
   - link:
       icon: "fa-solid fa-cart-shopping"
       text: "Cardápio <span class='link-button-text'>(5% desconto)</span>"
-      url: "https://natile-gourmet.ola.click/products/"
+      url: "https://cardapio.natile.com.br"
       alt: "Link para o cardápio no nosso site"
-      title: "Não sei"
+      title: "Link para o cardápio no nosso site"
       target: "_blank"
   - link:
       icon: "fa-solid fa-cart-shopping"
-      text: "Cardápio <span class='link-button-text'>(5% desconto)</span>"
-      url: "https://ifood.com.br"
+      text: "iFood"
+      url: "https://ifood.natile.com.br"
       alt: "Link para o cardápio no iFood"
-      title: "Não sei"
+      title: "Link para o cardápio no iFood"
       target: "_blank"
 
 
@@ -70,19 +71,19 @@ links:
 socials:
   - social:
       icon: "fa-brands fa-facebook"
-      url: "http://facebook.com/natile.oficial"
+      url: "https://facebook.natile.com.br"
       title: "Facebook"
       alt: "Facebook"
       target: "_blank"
   - social:
       icon: "fa-brands fa-instagram"
-      url: "https://www.instagram.com/natile.oficial"
+      url: "https://instagram.natile.com.br"
       title: "Instagram"
       alt: "Instagram"
       target: "_blank"
   - social:
       icon: "fa-brands fa-whatsapp"
-      url: "https://wa.me/5521977096025"
+      url: "https://whatsapp.natile.com.br"
       title: "Whatsapp"
       alt: "Whatsapp"
       target: "_blank"
