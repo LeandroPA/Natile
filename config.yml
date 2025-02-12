@@ -47,17 +47,17 @@ tagline: >-
 links:
   - link:
       icon: "fa-solid fa-cart-shopping"
-      text: "A <span class='link-button-text'>V</span>"
-      url: "https://google.com/"
-      alt: "ZMediumToMarkdown is a powerful tool that allows you to effortlessly download and convert your Medium posts to Markdown format."
-      title: "ZMediumToMarkdown is a powerful tool that allows you to effortlessly download and convert your Medium posts to Markdown format."
+      text: "Cardápio <span class='link-button-text'>(5% desconto)</span>"
+      url: "https://natile-gourmet.ola.click/products/"
+      alt: "Link para o cardápio no nosso site"
+      title: "Não sei"
       target: "_blank"
   - link:
-      icon: "fa-brands fa-github"
-      text: "linkyee <span class='link-button-text'>({{vars.GithubRepoStarsCountPlugin['ZhgChgLi/linkyee']}} Stars)</span>"
-      url: "https://github.com/ZhgChgLi/linkyee"
-      alt: "linkyee is a fully customized, open-source LinkTree alternative deployed directly on GitHub Pages."
-      title: "linkyee is a fully customized, open-source LinkTree alternative deployed directly on GitHub Pages."
+      icon: "fa-solid fa-cart-shopping"
+      text: "Cardápio <span class='link-button-text'>(5% desconto)</span>"
+      url: "https://ifood.com.br"
+      alt: "Link para o cardápio no iFood"
+      title: "Não sei"
       target: "_blank"
 
 
@@ -69,47 +69,35 @@ links:
 # target: _blank opens in a new tab, _self opens in the same frame
 socials:
   - social:
-      icon: "fa-brands fa-medium"
-      url: "https://blog.zhgchg.li"
-      title: "ZhgChgLi's Medium"
-      alt: "ZhgChgLi's Medium"
-      target: "_blank"
-  - social:
-      icon: "fa-brands fa-github"
-      url: "https://github.com/ZhgChgLi"
-      title: "ZhgChgLi's GitHub"
-      alt: "ZhgChgLi's GitHub"
-      target: "_blank"
-  - social:
-      icon: "fa-brands fa-twitter"
-      url: "https://twitter.com/zhgchgli"
-      title: "ZhgChgLi's Twitter"
-      alt: "ZhgChgLi's Twitter"
-      target: "_blank"
-  - social:
-      icon: "fa-brands fa-linkedin"
-      url: "https://www.linkedin.com/in/zhgchgli/"
-      title: "ZhgChgLi's LinkedIn"
-      alt: "ZhgChgLi's LinkedIn"
+      icon: "fa-brands fa-facebook"
+      url: "http://facebook.com/natile.oficial"
+      title: "Facebook"
+      alt: "Facebook"
       target: "_blank"
   - social:
       icon: "fa-brands fa-instagram"
-      url: "https://www.instagram.com/zhgchgli/"
+      url: "https://www.instagram.com/natile.oficial"
       title: "Instagram"
-      alt: "ZhgChgLi's Instagram"
+      alt: "Instagram"
+      target: "_blank"
+  - social:
+      icon: "fa-brands fa-whatsapp"
+      url: "https://wa.me/5521977096025"
+      title: "Whatsapp"
+      alt: "Whatsapp"
       target: "_blank"
   - social:
       icon: "fa-solid fa-envelope"
-      url: "mailto:zhgchgli@gmail.com"
-      title: "Email: zhgchgli@gmail.com"
-      alt: "zhgchgli@gmail.com"
+      url: "mailto:contato@natile.com.br"
+      title: "Email: contato@natile.com.br"
+      alt: "contato@natile.com.br"
       target: "_blank"
 
 # Footer text
 footer: >
-    Hi there! Follow me on Medium or GitHub, or stay connected on Instagram or LinkedIn.
+    Siga-nos nas redes sociais
 
 # Footer copyright message
 # Linkyee is a 100% free, open-source project—feel free to modify the copyright message as you like. :)
 copyright: >
-  © 2024  <a href="https://zhgchg.li" target="_blank">ZhgChgLi</a>. Powered by <a href="https://github.com/ZhgChgLi/linkyee" target="_blank">linkyee</a>
+  © 2025 Natilê
