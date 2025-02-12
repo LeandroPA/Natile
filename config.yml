@@ -36,6 +36,7 @@ name: "Natilê"
 # Tagline section text
 tagline: >-
     Em breve sobremesas próximo a você!
+    asd
     Campo Grande - RJ
 
 # List of links
@@ -49,14 +50,14 @@ links:
   - link:
       icon: "fa-solid fa-cart-shopping"
       text: "Cardápio <span class='link-button-text'>(5% desconto)</span>"
-      url: "https://cardapio.natile.com.br"
+      url: "http://cardapio.natile.com.br"
       alt: "Link para o cardápio no nosso site"
       title: "Link para o cardápio no nosso site"
       target: "_blank"
   - link:
       icon: "fa-solid fa-cart-shopping"
       text: "iFood"
-      url: "https://ifood.natile.com.br"
+      url: "http://ifood.natile.com.br"
       alt: "Link para o cardápio no iFood"
       title: "Link para o cardápio no iFood"
       target: "_blank"
@@ -71,19 +72,19 @@ links:
 socials:
   - social:
       icon: "fa-brands fa-facebook"
-      url: "https://facebook.natile.com.br"
+      url: "http://facebook.natile.com.br"
       title: "Facebook"
       alt: "Facebook"
       target: "_blank"
   - social:
       icon: "fa-brands fa-instagram"
-      url: "https://instagram.natile.com.br"
+      url: "http://instagram.natile.com.br"
       title: "Instagram"
       alt: "Instagram"
       target: "_blank"
   - social:
       icon: "fa-brands fa-whatsapp"
-      url: "https://whatsapp.natile.com.br"
+      url: "http://whatsapp.natile.com.br"
       title: "Whatsapp"
       alt: "Whatsapp"
       target: "_blank"
@@ -99,6 +100,5 @@ footer: >
     Siga-nos nas redes sociais
 
 # Footer copyright message
-# Linkyee is a 100% free, open-source project—feel free to modify the copyright message as you like. :)
 copyright: >
   © 2025 Natilê
