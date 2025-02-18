@@ -36,7 +36,7 @@ a {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
-  /* border: 2px solid black; */
+  border: 2px solid black;
 }
 
 .name {
