@@ -9,6 +9,8 @@
 /* Light mode (default) */
 body {
   background-image: linear-gradient(0deg, #ff0000 0%, #ffff00 100%);
+  padding: 10px;
+  height: 100vh;
 }
 
 a {
@@ -97,7 +99,7 @@ a {
   cursor: pointer;
   transition: transform 0.2s;
   background: none;
-  color: black;
+  color: #f97302;
 }
 
 .icon-button i {
@@ -106,7 +108,7 @@ a {
 
 .icon-button:hover {
   transform: scale(1.1);
-  color: #666;
+  color: #c95a00;
 }
 
 .icon-button:active {
@@ -125,21 +127,20 @@ a {
 
 .background-overlay {
   background: rgba(255, 255, 255, 0.6);
-  margin: 10px;
   color: #000000;
+  padding: 20px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
   cursor: default;
   text-align: center;
-  padding: 20px;
 }
 
 /* Dark mode */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   body {
-    /* background-color: #0d1117; */
+    background-color: #0d1117;
     color: white;
   }
 
@@ -175,4 +176,4 @@ a {
   .link-button-text {
     color: #8b949e;
   }
-}
+} */

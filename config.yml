@@ -81,6 +81,12 @@ socials:
       alt: "Instagram"
       target: "_blank"
   - social:
+      icon: "fa-brands fa-tiktok"
+      url: "http://tiktok.natile.com.br"
+      title: "Tiktok"
+      alt: "Tiktok"
+      target: "_blank"
+  - social:
       icon: "fa-brands fa-whatsapp"
       url: "http://whatsapp.natile.com.br"
       title: "Whatsapp"
