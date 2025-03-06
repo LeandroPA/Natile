@@ -125,7 +125,7 @@ a {
 
 .background-overlay {
   background: rgba(255, 255, 255, 0.6);
-  margin: 20px;
+  margin: 10px;
   color: #000000;
   display: flex;
   align-items: center;
@@ -133,7 +133,7 @@ a {
   min-height: 100vh;
   cursor: default;
   text-align: center;
-  padding: 20px 0 20px 0;
+  padding: 20px;
 }
 
 /* Dark mode */
