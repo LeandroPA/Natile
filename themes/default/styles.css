@@ -9,6 +9,7 @@
 /* Light mode (default) */
 body {
   background-image: linear-gradient(0deg, #ff0000 0%, #ffff00 100%);
+  backdrop-filter: url(/images/noise.svg#noise) opacity(0.25);
   padding: 10px;
   height: 100vh;
 }
