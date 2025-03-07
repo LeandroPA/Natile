@@ -30,8 +30,7 @@ a {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
-  border-color: white;
-  border: 3px solid black;
+  border: 3px solid white;
 }
 
 .name {
@@ -60,7 +59,7 @@ a {
   align-items: center;
   gap: 10px;
   background-color: #fa8a2b;
-  color: black;
+  color: white;
   padding: 15px;
   border-radius: 8px;
   font-size: 18px;
