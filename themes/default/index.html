@@ -54,10 +54,19 @@
   
       <div class="links">
         {% for item in links %}
-          {% assign link = item.link %}
-          <a href="{{ link.url }}" target="{{ link.target }}" class="link-button" alt="{{ link.alt }}" title="{{ link.title }}">
-            <i class="{{ link.icon }}"></i> {{ link.text }}
-          </a>
+          {% if item.link %}
+            {% assign link = item.link %}
+            <a href="{{ link.url }}" target="{{ link.target }}" class="link-button" alt="{{ link.alt }}" title="{{ link.title }}">
+              <i class="{{ link.icon }}"></i> {{ link.text }}
+            </a>            
+          {% elsif item.button %}
+            {% assign button = item.button %}
+            <button type="collapsible-button"><i class="{{ button.icon }}"></i> {{ button.title }}</button>
+            <div class="collapsible-content">
+              <!-- <p>Lorem ipsum...</p> -->
+              {{ button.content }}
+            </div>
+          {% end if %}
         {% endfor %}
       </div>
   
