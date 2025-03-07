@@ -12,7 +12,7 @@ for (i = 0; i < coll.length; i++) {
         console.log("This: ", this);
         if (content.style.maxHeight){
           content.style.maxHeight = null;
-          content.style.padding = null;
+          content.style.padding = "0px 20px";
         } else {
           content.style.maxHeight = content.scrollHeight + "px";
           content.style.padding = "20px";
