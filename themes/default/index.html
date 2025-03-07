@@ -61,12 +61,13 @@
             </a>            
           {% elsif item.button %}
             {% assign button = item.button %}
-            <button type="collapsible-button"><i class="{{ button.icon }}"></i> {{ button.title }}</button>
-            <div class="collapsible-content">
-              <!-- <p>Lorem ipsum...</p> -->
-              {{ button.content }}
+            <div class="collapsible-button">
+              <div class="collapsible-title"><i class="{{ button.icon }}"></i> {{ button.title }}</div>
+              <div class="collapsible-content">
+                {{ button.content }}
+              </div>
             </div>
-          {% end if %}
+          {% endif %}
         {% endfor %}
       </div>
   

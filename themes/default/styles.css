@@ -139,6 +139,56 @@ a {
   text-align: center;
 }
 
+/* Style the button that is used to open and close the collapsible content */
+.collapsible-button {
+  /* border: none; */
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  border-radius: 8px;
+  transition: background-color 0.3s, transform 0.2s;
+  background-color: #fa8a2b;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible-title {
+  /* border: none; */
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 15px;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible-button:hover {
+  background-color: #f97302;
+}
+/* Style the button that is used to open and close the collapsible content */
+.collapsible-button:hover {
+  transform: scale(1.05);
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.collapsible-active {
+  background-color: #f97302;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapsible-content {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  max-height: 0;
+  transition: max-height 0.2s ease-out
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.collapsible-content img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Dark mode */
 /* @media (prefers-color-scheme: dark) {
   body {

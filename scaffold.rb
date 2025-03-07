@@ -65,11 +65,11 @@ end
 
 if !settings["links"].nil?
   settings["links"].each_with_index do |link, index|
-    settings["links"][index]["link"]["icon"] = Liquid::Template.parse(settings["links"][index]["link"]["icon"]).render(settings)
-    settings["links"][index]["link"]["url"] = Liquid::Template.parse(settings["links"][index]["link"]["url"]).render(settings)
-    settings["links"][index]["link"]["alt"] = Liquid::Template.parse(settings["links"][index]["link"]["alt"]).render(settings)
-    settings["links"][index]["link"]["title"] = Liquid::Template.parse(settings["links"][index]["link"]["title"]).render(settings)
-    settings["links"][index]["link"]["text"] = Liquid::Template.parse(settings["links"][index]["link"]["text"]).render(settings)
+    key = link.keys[0]
+    link[key].keys do |subKey|
+      print "SubKey: ", subKey
+      settings["links"][index][key][subKey] = Liquid::Template.parse(settings["links"][index][key][subKey]).render(settings)
+    end
   end
 end
 
