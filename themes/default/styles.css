@@ -30,6 +30,7 @@ a {
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
+  border-color: white;
   border: 3px solid black;
 }
 
@@ -37,13 +38,14 @@ a {
   font-size: 28px;
   font-weight: bold;
   margin: 10px 0;
+  color: #a54b00;
 }
 
 .description {
   font-size: 16px;
   margin-bottom: 30px;
   line-height: 1.6;
-  color: #555;
+  color: #bc5600;
 }
 
 .links {
@@ -57,7 +59,7 @@ a {
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  background-color: #f0f0f0;
+  background-color: #fa8a2b;
   color: black;
   padding: 15px;
   border-radius: 8px;
@@ -67,14 +69,14 @@ a {
 }
 
 .link-button:hover {
-  background-color: #e0e0e0;
+  background-color: #f97302;
   transform: scale(1.05);
 }
 
 .footer {
   margin-top: 40px;
   font-size: 14px;
-  color: #777;
+  color: #bc5600;
 }
 
 .button-container {
@@ -99,7 +101,7 @@ a {
   cursor: pointer;
   transition: transform 0.2s;
   background: none;
-  color: #f97302;
+  color: #fa8a2b;
 }
 
 .icon-button i {
@@ -108,7 +110,7 @@ a {
 
 .icon-button:hover {
   transform: scale(1.1);
-  color: #c95a00;
+  color: #f97302;
 }
 
 .icon-button:active {
@@ -117,7 +119,7 @@ a {
 
 .link-button-text {
   font-size: 14px;
-  color: #777;
+  color: #ffead8;
 }
 
 .copyright {
