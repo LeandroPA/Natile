@@ -40,7 +40,7 @@ const coberturaMap = [
 function initMap() {
   console.log("init map")
   const map = new google.maps.Map(document.getElementById("cobertura-map"), {
-      zoom: 13,
+      zoom: document.body.offsetWidth < 500 ? 12 : 13,
       center: { lat : -22.896373, lng: -43.560605},
   });
 
