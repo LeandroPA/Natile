@@ -1,21 +1,33 @@
-var coll = document.getElementsByClassName("collapsible-title");
-var i;
+function removeAllCollapsibleActives() {
 
-console.log(coll);
-for (i = 0; i < coll.length; i++) {
-    
-    console.log(coll[i]);
-    coll[i].addEventListener("click", function() {
-        this.parentElement.classList.toggle("collapsible-active");
-        var content = this.lastElementChild;
+  var actives = document.getElementsByClassName("collapsible-active");
 
-        console.log("This: ", this);
-        if (content.style.maxHeight){
-          // content.style.padding = "0px 20px";
-          // content.style.maxHeight = null;
-        } else {
-          // content.style.padding = "20px";
-          // content.style.maxHeight = content.scrollHeight + "px";
-        }
-    });
+  for (var i = 0; i < actives.length; i++) {
+    actives[i].classList.remove("collapsible-active")
+  }
 }
+
+function onClickCollapsibleButton() {
+  console.log('onClickCollapsibleButton', this);
+  var shouldToggle = !this.parentElement.classList.contains("collapsible-active") 
+  removeAllCollapsibleActives();
+  shouldToggle && this.parentElement.classList.toggle("collapsible-active");
+}
+
+function onClickOutsideCollapsibleButton() {
+  console.log('onClickOutsideCollapsibleButton', this);
+  removeAllCollapsibleActives();
+}
+
+function setListener(domElements, event, callback) {
+  for (var i = 0; i < domElements.length; i++) {
+    domElements[i].addEventListener(event, callback);
+  }
+}
+
+function main() {
+  setListener(document.getElementsByClassName("collapsible-title"), "click", onClickCollapsibleButton);
+  // setListener(document.getElementsByClassName("background-overlay"), "click", onClickOutsideCollapsibleButton);
+}
+
+main();
