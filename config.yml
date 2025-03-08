@@ -36,8 +36,7 @@ name: "Natilê"
 # Tagline section text
 tagline: >-
     Em breve sobremesas próximo a você!
-    <br>🍓 Sacolés Gourmet
-    <br>🛵 Delivery
+    <br>🍓 Sacolés Gourmet 🛵 Delivery
     <br>📍 Campo Grande - RJ
 
 # List of links
@@ -70,6 +69,7 @@ links:
       title: "Onde entregamos"
     #   target: "_blank"
       content: >-
+        <div class="warn"><i class="fa-solid fa-triangle-exclamation"></i><span>Cobertura inicialmente limitada. Demais localidades nos mande uma mensagem. ❤️</span></div>
         <div id="cobertura-map"></div>
 
 
