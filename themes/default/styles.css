@@ -112,9 +112,9 @@ a {
   color: #f97302;
 }
 
-.icon-button:active {
+/* .icon-button:active {
   transform: scale(0.95);
-}
+} */
 
 .link-button-text {
   font-size: 14px;
