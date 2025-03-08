@@ -198,6 +198,10 @@ a {
   height: auto;
 }
 
+#cobertura-map {
+  height: 410px;
+}
+
 /* Dark mode */
 /* @media (prefers-color-scheme: dark) {
   body {

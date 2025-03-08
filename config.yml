@@ -70,8 +70,7 @@ links:
       title: "Onde entregamos"
     #   target: "_blank"
       content: >-
-        Área de cobertura
-        <img src="images/mapa_cobertura.png" alt="" width="500" height="600">
+        <div id="cobertura-map"></div>
 
 
 # List of social media links
