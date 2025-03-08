@@ -1,4 +1,4 @@
-var coll = document.getElementsByClassName("collapsible-button");
+var coll = document.getElementsByClassName("collapsible-title");
 var i;
 
 console.log(coll);
@@ -6,7 +6,7 @@ for (i = 0; i < coll.length; i++) {
     
     console.log(coll[i]);
     coll[i].addEventListener("click", function() {
-        // this.classList.toggle("collapsible-active");
+        this.parentElement.classList.toggle("collapsible-active");
         var content = this.lastElementChild;
 
         console.log("This: ", this);

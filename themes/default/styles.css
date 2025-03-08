@@ -162,16 +162,14 @@ a {
   padding: 15px;
   cursor: pointer;
 }
-/* Style the button that is used to open and close the collapsible content */
-.collapsible-button:hover, .collapsible-button:focus {
-  background-color: #f97302;
-}
-.collapsible-button:focus .collapsible-content {
+
+.collapsible-active .collapsible-content {
+  max-height: 100vh;
   padding: 20px;
-  max-height: unset;
 }
 /* Style the button that is used to open and close the collapsible content */
 .collapsible-button:hover {
+  background-color: #f97302;
   transform: scale(1.05);
 }
 
@@ -190,8 +188,8 @@ a {
   overflow: hidden;
   background-color: #f1f1f1;
   max-height: 0;
-  padding: 0px 20px 0px 20px;
-  transition: max-height 0.2s ease-out, padding 0.2s ease-in
+  padding: 0px 20px;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out
 }
 
 /* Style the collapsible content. Note: hidden by default */
