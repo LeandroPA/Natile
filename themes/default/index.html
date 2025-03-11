@@ -72,7 +72,7 @@
             </a>            
           {% elsif item.button %}
             {% assign button = item.button %}
-            <div class="collapsible-button">
+            <div class="collapsible-button" id="#collapsible-button-{{ forloop.index }}">
               <div class="collapsible-title"><i class="{{ button.icon }}"></i> {{ button.title }}</div>
               <div class="collapsible-content">
                 {{ button.content }}

@@ -11,7 +11,10 @@ function onClickCollapsibleButton() {
   console.log('onClickCollapsibleButton', this);
   var shouldToggle = !this.parentElement.classList.contains("collapsible-active") 
   removeAllCollapsibleActives();
-  shouldToggle && this.parentElement.classList.toggle("collapsible-active");
+  if (shouldToggle) {
+    this.parentElement.classList.toggle("collapsible-active");
+    window.location.href = window.location.href + "#" + this.parentElement.id;
+  }
 }
 
 function onClickOutsideCollapsibleButton() {
