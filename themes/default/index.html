@@ -74,8 +74,10 @@
             {% assign button = item.button %}
             <div class="collapsible-button" id="{{ button.id }}">
               <div class="collapsible-title"><i class="{{ button.icon }}"></i> {{ button.title }}</div>
-              <div class="collapsible-content">
-                {{ button.content }}
+              <div class="collapsible-hide">
+                <div class="collapsible-content">
+                  {{ button.content }}
+                </div>
               </div>
             </div>
           {% endif %}
@@ -104,6 +106,7 @@
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-yV97JiC-btYJmMt0YsTjdv4rfW6v0ac&callback=initMap&v=weekly"
     defer
   ></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="./scripts.js"></script>
 </body>
 </html>

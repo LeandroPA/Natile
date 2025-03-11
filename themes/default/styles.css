@@ -150,7 +150,6 @@ a {
   transition: background-color 0.3s, transform 0.2s;
   background-color: #fa8a2b;
 }
-
 /* Style the button that is used to open and close the collapsible content */
 .collapsible-title {
   /* border: none; */
@@ -164,10 +163,10 @@ a {
   cursor: pointer;
 }
 
-.collapsible-active .collapsible-content {
+/* .collapsible-active .collapsible-content {
   max-height: 100vh;
   padding: 20px;
-}
+} */
 /* Style the button that is used to open and close the collapsible content */
 @media (hover: hover) {
   .collapsible-button:hover:not(.collapsible-active) {
@@ -177,12 +176,15 @@ a {
 }
 
 /* Style the collapsible content. Note: hidden by default */
+.collapsible-hide {
+  display: none;
+}
 .collapsible-content {
   overflow: hidden;
   background-color: #f1f1f1;
-  max-height: 0;
-  padding: 0px 20px;
-  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  max-height: 100vh;
+  padding: 20px;
+  /* transition: max-height 0.3s ease-out, padding 0.3s ease-out; */
   display: flex;
   gap: 10px;
   flex-direction: column;
