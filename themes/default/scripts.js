@@ -67,5 +67,6 @@ function initMap() {
 window.initMap = initMap;
 $(document).ready(function(){
 	$('.collapsible-title').on('click',onClickCollapsibleButton);
+	$('.collapsible-content').on('click', e => e.stopPropagation());
 	$('.background-overlay').on('click', onClickBackgroundOverlay);
 });
