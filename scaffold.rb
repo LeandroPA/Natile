@@ -66,8 +66,7 @@ end
 if !settings["links"].nil?
   settings["links"].each_with_index do |link, index|
     key = link.keys[0]
-    link[key].keys do |subKey|
-      print "SubKey: ", subKey
+    link[key].keys.each do |subKey|
       settings["links"][index][key][subKey] = Liquid::Template.parse(settings["links"][index][key][subKey]).render(settings)
     end
   end
@@ -75,12 +74,21 @@ end
 
 if !settings["socials"].nil?
   settings["socials"].each_with_index do |link, index|
-    settings["socials"][index]["social"]["icon"] = Liquid::Template.parse(settings["socials"][index]["social"]["icon"]).render(settings)
-    settings["socials"][index]["social"]["url"] = Liquid::Template.parse(settings["socials"][index]["social"]["url"]).render(settings)
-    settings["socials"][index]["social"]["alt"] = Liquid::Template.parse(settings["socials"][index]["social"]["alt"]).render(settings)
-    settings["socials"][index]["social"]["title"] = Liquid::Template.parse(settings["socials"][index]["social"]["title"]).render(settings)
+    key = link.keys[0]
+    link[key].keys.each do |subKey|
+      settings["socials"][index][key][subKey] = Liquid::Template.parse(settings["socials"][index][key][subKey]).render(settings)
+    end
   end
 end
+
+# if !settings["socials"].nil?
+#   settings["socials"].each_with_index do |link, index|
+#     settings["socials"][index]["social"]["icon"] = Liquid::Template.parse(settings["socials"][index]["social"]["icon"]).render(settings)
+#     settings["socials"][index]["social"]["url"] = Liquid::Template.parse(settings["socials"][index]["social"]["url"]).render(settings)
+#     settings["socials"][index]["social"]["alt"] = Liquid::Template.parse(settings["socials"][index]["social"]["alt"]).render(settings)
+#     settings["socials"][index]["social"]["title"] = Liquid::Template.parse(settings["socials"][index]["social"]["title"]).render(settings)
+#   end
+# end
 
 settings["title"] = Liquid::Template.parse(settings["title"]).render(settings)
 settings["footer"] = Liquid::Template.parse(settings["footer"]).render(settings)

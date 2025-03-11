@@ -10,16 +10,10 @@ lang: "br"
 # Use {{ vars.PLUGIN_NAME }} in the settings below
 
 # The output of the plugin can be used below, e.g., {{vars.MediumFollowersCountPlugin}}
-# plugins:
-#   # Automatically fetch Medium follower count
-#   - MediumFollowersCountPlugin:
-#       username: zhgchgli
-#   # Automatically fetch Github repo star count
-#   - GithubRepoStarsCountPlugin:
-#       - ZhgChgLi/ZMarkupParser
-#       - ZhgChgLi/ZReviewTender
-#       - ZhgChgLi/ZMediumToMarkdown
-#       - ZhgChgLi/linkyee
+plugins:
+  - AgeCalculatorPlugin:
+      nathalia: 26/08/1998
+      leandro: 08/09/1997
 
 # Google Analytics tracking id
 google_analytics_id: G-DV5PGV5TJ9
@@ -74,6 +68,21 @@ links:
       content: >-
         <div class="warn"><i class="fa-solid fa-triangle-exclamation"></i><span>Cobertura inicialmente limitada. Demais localidades nos mande uma mensagem. ❤️</span></div>
         <div id="cobertura-map"></div>
+  - button:
+      id: "sobre-nos"
+      icon: "fa-solid fa-circle-info"
+      text: "Sobre nós"
+    #   url: "http://ifood.natile.com.br"
+      alt: "Sobre nós"
+      title: "Sobre nós"
+    #   target: "_blank"
+      content: >-
+        <img src="./images/sobre_nos.jpg"></img>
+        <p>Oi, nós somos Nathalia e Leandro, temos {{vars.AgeCalculatorPlugin['nathalia']}} e {{vars.AgeCalculatorPlugin['leandro']}} anos, juntos
+        decidimos em criar nossa primeira marca, a Natilê.<br>
+        Juntamos nossa paixão por sobremesas geladas, artesanais e com
+        um toque de ingredientes naturais, nascendo assim a nossa parceria entre Nath e Lê (pegou a referência? 😜).</p>
+
 
 
 # List of social media links

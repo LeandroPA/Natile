@@ -1,24 +1,40 @@
-function removeAllCollapsibleActives(ignoreElement) {
-	$('collapsible-active').not(ignoreElement).removeClass('collapsible-active');
+function removeAllCollapsibleActives(ignoreElement = {}) {
+	$('.collapsible-active').not(ignoreElement.parentElement)
+		.each(function() {
+			toggleCollapsibleButton(this.children[0]);
+		});
 }
 
-function onClickCollapsibleButton() {
-	if ($(this).next().is(':animated')) {
-		return;
-	}
-	// removeAllCollapsibleActives(this.parentElement);
-	// $(this).next().parent().toggleClass('collapsible-active');
-	$(this).parent().toggleClass('collapsible-active');
-	$(this).next().slideToggle(function() {
+function toggleCollapsibleButton(element) {
+	buttonToggling = true;
+	$(element).parent().toggleClass('collapsible-active');
+	$(element).next().slideToggle(function() {
+		buttonToggling = false;
 		$('.collapsible-active').each(function() {
 			this.scrollIntoView({behavior: 'smooth'});
 		});
 	});
+}
 
-	// setTimeout(() => {
-	// 	$('.collapsible-active').each(() => this.scrollIntoView({behavior: 'smooth'}));
-	// }, 200)
-	// $(this).parent()[0].scrollIntoView({behavior: 'smooth'});
+let buttonToggling = false;
+
+function onClickBackgroundOverlay(event) {
+	if (buttonToggling) {
+		return;
+	}
+	event.preventDefault();
+	event.stopPropagation();
+	removeAllCollapsibleActives();
+}
+
+function onClickCollapsibleButton(event) {
+	if (buttonToggling) {
+		return;
+	}
+	event.preventDefault();
+	event.stopPropagation();
+	removeAllCollapsibleActives(this);
+	toggleCollapsibleButton(this);
 }
 
 const coberturaMap = [
@@ -51,5 +67,5 @@ function initMap() {
 window.initMap = initMap;
 $(document).ready(function(){
 	$('.collapsible-title').on('click',onClickCollapsibleButton);
-	// $('.background-overlay').on('click', removeAllCollapsibleActives);
+	$('.background-overlay').on('click', onClickBackgroundOverlay);
 });
