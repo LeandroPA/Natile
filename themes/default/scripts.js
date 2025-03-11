@@ -13,7 +13,7 @@ function onClickCollapsibleButton() {
   removeAllCollapsibleActives();
   if (shouldToggle) {
     this.parentElement.classList.toggle("collapsible-active");
-    window.location.href = window.location.href + this.parentElement.id;
+    window.location.href = window.location.href + '#'+ this.parentElement.id;
   } else {
     window.location.href = window.location.href.split('#')[0];
   }

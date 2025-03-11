@@ -48,6 +48,7 @@ tagline: >-
 # target: `_blank` opens in a new tab, `_self` opens in the same frame
 links:
   - link:
+      id: "cardapio"
       icon: "fa-solid fa-cart-shopping"
       text: "Cardápio <span class='link-button-text'>(Com desconto!)</span>"
       url: "http://cardapio.natile.com.br"
@@ -55,6 +56,7 @@ links:
       title: "Link para o cardápio no nosso site"
       target: "_self"
   - link:
+      id: "ifood"
       icon: "fa-brands fa-ifood"
       text: "iFood"
       url: "http://ifood.natile.com.br"
@@ -62,6 +64,7 @@ links:
       title: "Link para o cardápio no iFood"
       target: "_blank"
   - button:
+      id: "onde-entregamos"
       icon: "fa-solid fa-map"
       text: "Onde entregamos"
     #   url: "http://ifood.natile.com.br"
