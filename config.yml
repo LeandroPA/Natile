@@ -61,10 +61,8 @@ links:
       id: "onde-entregamos"
       icon: "fa-solid fa-map"
       text: "Onde entregamos"
-    #   url: "http://ifood.natile.com.br"
       alt: "Imagem ilustrativa de onde entregamos, na área central de Campo Grande - RJ"
       title: "Onde entregamos"
-    #   target: "_blank"
       content: >-
         <div class="warn"><i class="fa-solid fa-triangle-exclamation"></i><span>Cobertura inicialmente limitada. Demais localidades nos mande uma mensagem. ❤️</span></div>
         <div id="cobertura-map"></div>
@@ -72,10 +70,8 @@ links:
       id: "sobre-nos"
       icon: "fa-solid fa-circle-info"
       text: "Sobre nós"
-    #   url: "http://ifood.natile.com.br"
       alt: "Sobre nós"
       title: "Sobre nós"
-    #   target: "_blank"
       content: >-
         <img src="./images/sobre_nos.jpg"></img>
         <p>Oi, nós somos Nathalia e Leandro, temos {{vars.AgeCalculatorPlugin['nathalia']}} e {{vars.AgeCalculatorPlugin['leandro']}} anos, juntos
