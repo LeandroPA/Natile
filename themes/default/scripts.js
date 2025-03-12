@@ -12,7 +12,7 @@ function toggleCollapsibleButton(element) {
 		buttonToggling = false;
 		$('.collapsible-active').each(function() {
 			this.scrollIntoView({behavior: 'smooth'});
-		});
+		});	
 	});
 }
 
