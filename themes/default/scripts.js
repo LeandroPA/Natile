@@ -22,7 +22,6 @@ function onClickBackgroundOverlay(event) {
 	if (buttonToggling) {
 		return;
 	}
-	event.preventDefault();
 	event.stopPropagation();
 	removeAllCollapsibleActives();
 }
@@ -31,7 +30,6 @@ function onClickCollapsibleButton(event) {
 	if (buttonToggling) {
 		return;
 	}
-	event.preventDefault();
 	event.stopPropagation();
 	removeAllCollapsibleActives(this);
 	toggleCollapsibleButton(this);
