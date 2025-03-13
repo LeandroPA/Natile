@@ -7,7 +7,6 @@ function removeAllCollapsibleActives(ignoreElement = {}) {
 
 function toggleCollapsibleButton(element) {
 	buttonToggling = true;
-	window.location.hash = '';
 	$(element).parent().toggleClass('collapsible-active');
 	$(element).next().slideToggle(function() {
 		buttonToggling = false;
@@ -70,18 +69,14 @@ $(document).ready(function(){
 	$('.background-overlay').on('click', onClickBackgroundOverlay);
 	
 	$(window).on("hashchange", function() {
-
-		collapsibleElement = $(window.location.hash);
-		console.log('window.location.hash', window.location.hash)
 		if (collapsibleElement.length > 0 && !collapsibleElement.hasClass('collapsible-active')) {
-			
-			console.log('window.location.hash passou', collapsibleElement)
 			toggleCollapsibleButton(collapsibleElement.children(':first').get(0))
-
 		}
+		window.location.hash = '';
 	});
 
 	if (window.location.hash) {
+		window.location.hash = '';
 		toggleCollapsibleButton($(window.location.hash).children(':first').get(0))
 	}
 });
