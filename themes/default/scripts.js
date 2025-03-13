@@ -7,11 +7,12 @@ function removeAllCollapsibleActives(ignoreElement = {}) {
 
 function toggleCollapsibleButton(element) {
 	buttonToggling = true;
+	window.location.hash = '';
 	$(element).parent().toggleClass('collapsible-active');
 	$(element).next().slideToggle(function() {
 		buttonToggling = false;
 		$('.collapsible-active').each(function() {
-			this.scrollIntoView({behavior: 'smooth'});
+			window.scrollTo({left: 0, top: this.offsetTop - 10, behavior: 'smooth'})
 		});	
 	});
 }
@@ -67,4 +68,12 @@ $(document).ready(function(){
 	$('.collapsible-title').on('click',onClickCollapsibleButton);
 	$('.collapsible-content').on('click', e => e.stopPropagation());
 	$('.background-overlay').on('click', onClickBackgroundOverlay);
+	
+	$(document).on("hashchange", function() {
+		toggleCollapsibleButton($(window.location.hash).children(':first').get(0))
+	});
+
+	if (window.location.hash) {
+		toggleCollapsibleButton($(window.location.hash).children(':first').get(0))
+	}
 });
