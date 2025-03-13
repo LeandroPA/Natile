@@ -68,10 +68,17 @@ $(document).ready(function(){
 	$('.collapsible-content, a').on('click', e => e.stopPropagation());
 	$('.background-overlay').on('click', onClickBackgroundOverlay);
 	
-	$(window).on("hashchange", function() {
-		if (collapsibleElement.length > 0 && !collapsibleElement.hasClass('collapsible-active')) {
-			toggleCollapsibleButton(collapsibleElement.children(':first').get(0))
+	$(window).on("hashchange", function(event) {
+
+		collapsibleElement = $(window.location.hash);
+		
+		if (!collapsibleElement.length) {
+			return;
 		}
+
+		if (!collapsibleElement.hasClass('collapsible-active')) {
+			toggleCollapsibleButton(collapsibleElement.children(':first').get(0))
+		}		
 		window.location.hash = '';
 	});
 
