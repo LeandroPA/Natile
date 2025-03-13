@@ -222,6 +222,10 @@ a {
 .warn span {
   text-align: left;
 }
+
+.hiden {
+  display: none;
+}
 /* Dark mode */
 /* @media (prefers-color-scheme: dark) {
   body {
