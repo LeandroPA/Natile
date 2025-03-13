@@ -7,6 +7,7 @@ function removeAllCollapsibleActives(ignoreElement = {}) {
 
 function toggleCollapsibleButton(element) {
 	buttonToggling = true;
+	window.location.hash = '';
 	$(element).parent().toggleClass('collapsible-active');
 	$(element).next().slideToggle(function() {
 		buttonToggling = false;
@@ -71,19 +72,16 @@ $(document).ready(function(){
 	$(window).on("hashchange", function(event) {
 
 		collapsibleElement = $(window.location.hash);
-		
 		if (!collapsibleElement.length) {
 			return;
 		}
 
 		if (!collapsibleElement.hasClass('collapsible-active')) {
 			toggleCollapsibleButton(collapsibleElement.children(':first').get(0))
-		}		
-		window.location.hash = '';
+		}
 	});
 
 	if (window.location.hash) {
-		window.location.hash = '';
 		toggleCollapsibleButton($(window.location.hash).children(':first').get(0))
 	}
 });
