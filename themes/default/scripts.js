@@ -66,11 +66,19 @@ function initMap() {
 window.initMap = initMap;
 $(document).ready(function(){
 	$('.collapsible-title').on('click',onClickCollapsibleButton);
-	$('.collapsible-content').on('click', e => e.stopPropagation());
+	$('.collapsible-content, a').on('click', e => e.stopPropagation());
 	$('.background-overlay').on('click', onClickBackgroundOverlay);
 	
-	$(document).on("hashchange", function() {
-		toggleCollapsibleButton($(window.location.hash).children(':first').get(0))
+	$(window).on("hashchange", function() {
+
+		collapsibleElement = $(window.location.hash);
+		console.log('window.location.hash', window.location.hash)
+		if (collapsibleElement.length > 0 && !collapsibleElement.hasClass('collapsible-active')) {
+			
+			console.log('window.location.hash passou', collapsibleElement)
+			toggleCollapsibleButton(collapsibleElement.children(':first').get(0))
+
+		}
 	});
 
 	if (window.location.hash) {
