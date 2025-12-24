@@ -12,8 +12,7 @@ lang: "br"
 # The output of the plugin can be used below, e.g., {{vars.MediumFollowersCountPlugin}}
 plugins:
   - AgeCalculatorPlugin:
-      nathalia: 26/08/1998
-      leandro: 08/09/1997
+      leandro: 08/09/2020
 
 # Google Analytics tracking id
 google_analytics_id: G-DV5PGV5TJ9
@@ -41,22 +40,33 @@ tagline: >-
 # alt: Alternative text for accessibility
 # target: `_blank` opens in a new tab, `_self` opens in the same frame
 links:
-  - link:
-      id: "cardapio"
-      icon: "fa-solid fa-cart-shopping"
-      text: "Cardápio <span class='link-button-text'>(Com desconto!)</span>"
-      url: "http://cardapio.natile.com.br"
-      alt: "Link para o cardápio no nosso site"
-      title: "Link para o cardápio no nosso site"
-      target: "_self"
-  - link:
-      id: "ifood"
-      icon: "fa-brands fa-ifood"
-      text: "iFood"
-      url: "http://ifood.natile.com.br"
-      alt: "Link para o cardápio no iFood"
-      title: "Link para o cardápio no iFood"
-      target: "_blank"
+#   - link:
+#       id: "cardapio"
+#       icon: "fa-solid fa-cart-shopping"
+#       text: "Cardápio <span class='link-button-text'>(Com desconto!)</span>"
+#       url: "http://cardapio.natile.com.br"
+#       alt: "Link para o cardápio no nosso site"
+#       title: "Link para o cardápio no nosso site"
+#       target: "_self"
+#   - link:
+#       id: "ifood"
+#       icon: "fa-brands fa-ifood"
+#       text: "iFood"
+#       url: "http://ifood.natile.com.br"
+#       alt: "Link para o cardápio no iFood"
+#       title: "Link para o cardápio no iFood"
+#       target: "_blank"
+#   - button:
+#       id: "onde-entregamos"
+#       icon: "fa-solid fa-map"
+#       text: "Onde entregamos"
+#       alt: "Imagem ilustrativa de onde entregamos, na área central de Campo Grande - RJ"
+#       title: "Onde entregamos"
+#       content: >-
+#         <div class="warn"><i class="fa-solid fa-triangle-exclamation"></i><span>Cobertura inicialmente limitada. Demais localidades nos mande uma mensagem. ❤️</span></div>
+#         <div id="cobertura-map"></div>
+
+
 
 # List of social media links
 # icon: Use Font Awesome icons (https://fontawesome.com/search?o=r&m=free)
@@ -77,6 +87,12 @@ socials:
       title: "Instagram"
       alt: "Instagram"
       target: "_blank"
+#   - social:
+#       icon: "fa-brands fa-tiktok"
+#       url: "http://tiktok.natile.com.br"
+#       title: "Tiktok"
+#       alt: "Tiktok"
+#       target: "_blank"
   - social:
       icon: "fa-brands fa-whatsapp"
       url: "http://whatsapp.natile.com.br"
