@@ -29,9 +29,9 @@ name: "Natilê"
 
 # Tagline section text
 tagline: >-
-    Em breve sobremesas próximo a você!
+    Encerramos as atividades, agradecemos a todos que nos acompanharam nessa jornada!
     <br>🍓 Sacolés Gourmet 🛵 Delivery
-    <br><a href='#onde-entregamos'>📍 Campo Grande - RJ</a>
+    <br>📍 Campo Grande - RJ
 
 # List of links
 # icon: Use Font Awesome icons (https://fontawesome.com/search?o=r&m=free)
@@ -57,29 +57,6 @@ links:
       alt: "Link para o cardápio no iFood"
       title: "Link para o cardápio no iFood"
       target: "_blank"
-  - button:
-      id: "onde-entregamos"
-      icon: "fa-solid fa-map"
-      text: "Onde entregamos"
-      alt: "Imagem ilustrativa de onde entregamos, na área central de Campo Grande - RJ"
-      title: "Onde entregamos"
-      content: >-
-        <div class="warn"><i class="fa-solid fa-triangle-exclamation"></i><span>Cobertura inicialmente limitada. Demais localidades nos mande uma mensagem. ❤️</span></div>
-        <div id="cobertura-map"></div>
-  - button:
-      id: "sobre-nos"
-      icon: "fa-solid fa-circle-info"
-      text: "Sobre nós"
-      alt: "Sobre nós"
-      title: "Sobre nós"
-      content: >-
-        <img src="./images/sobre_nos.jpg"></img>
-        <p>Oi, nós somos Nathalia e Leandro, temos {{vars.AgeCalculatorPlugin['nathalia']}} e {{vars.AgeCalculatorPlugin['leandro']}} anos, juntos
-        decidimos em criar nossa primeira marca, a Natilê.<br>
-        Juntamos nossa paixão por sobremesas geladas, artesanais e com
-        um toque de ingredientes naturais, nascendo assim a nossa parceria entre Nath e Lê (pegou a referência? 😜).</p>
-
-
 
 # List of social media links
 # icon: Use Font Awesome icons (https://fontawesome.com/search?o=r&m=free)
@@ -99,12 +76,6 @@ socials:
       url: "http://instagram.natile.com.br"
       title: "Instagram"
       alt: "Instagram"
-      target: "_blank"
-  - social:
-      icon: "fa-brands fa-tiktok"
-      url: "http://tiktok.natile.com.br"
-      title: "Tiktok"
-      alt: "Tiktok"
       target: "_blank"
   - social:
       icon: "fa-brands fa-whatsapp"
