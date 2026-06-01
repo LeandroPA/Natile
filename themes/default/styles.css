@@ -90,7 +90,8 @@ body {
   /* backdrop-filter: url(/images/noise.svg#noise) opacity(0.25); */
   background-color: var(--color-background);
   padding: 10px;
-  min-height: 100vh;
+  min-height: 100svh;
+  height: 100%;
   display: flex;
 }
 
