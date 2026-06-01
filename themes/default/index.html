@@ -15,6 +15,9 @@
     name="viewport"
     content="width=device-width, user-scalable=no initial-scale=1, shrink-to-fit=no, viewport-fit=cover"
   >
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
   <meta property="og:title" content="{{ title }}" />
   <meta name="author" content="{{ name }}" />
@@ -38,7 +41,6 @@
   <meta name="application-name" content="{{ title }}">
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="msapplication-config" content="./images/favicons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
 
 
   <link rel="stylesheet" href="./styles.css" />
@@ -53,8 +55,29 @@
   </p>
   <div class="background-overlay">
     <div class="container">
+      <!-- <div class="tipografia-container">
+        <div class="tipografia">
+          <span class="tipografia-1">
+            <span>NATILÊ</span>
+            <span>Montserrat SemiBold</span>
+          </span>
+          <span class="tipografia-2">
+            <span>CHURROS<br>GOURMET</span>
+            <span>Montserrat Medium</span>
+          </span>
+          <span class="tipografia-3">
+            <span>Texto de Apoio</span>
+            <span>Montserrat Regular</span>
+          </span>
+        </div>
+        <div class="tipografia-original">
+          <img src="./images/tipografia-original.png" alt="">
+        </div>
+      </div> -->
       <div class="profile">
-        <img src="{{ avatar }}" alt="Profile Picture" class="profile-pic" />
+        <div class="profile-pic-container">
+          <img src="{{ avatar }}" alt="Profile Picture" class="profile-pic" />
+        </div>
         <h1 class="name">{{ name }}</h1>
         <p class="description">{{ tagline }}</p>
       </div>
