@@ -37,11 +37,11 @@ og:
     url: https://natile.com.br
     title: Natilê | Churros Gourmet
     images:
-        - url: https://natile.com.br/images/social-preview.png
+        - url: https://natile.com.br/images/og-image-v1.png
           width: 1200
           height: 630
           alt: "Card para conhecer o site https://natile.com.br"
-        - url: https://natile.com.br/images/social-preview-square.png
+        - url: https://natile.com.br/images/og-image-square-v1.png
           width: 1024
           height: 1024
           alt: "Card para conhecer o site https://natile.com.br"
@@ -53,11 +53,11 @@ twitter:
     url: https://natile.com.br
     title: Natilê | Churros Gourmet
     images:
-        - url: https://natile.com.br/images/social-preview.png
+        - url: https://natile.com.br/images/og-image-v1.png
           width: 1200
           height: 630
           alt: "Card para conhecer o site https://natile.com.br"
-        - url: https://natile.com.br/images/social-preview-square.png
+        - url: https://natile.com.br/images/og-image-square-v1.png
           width: 1024
           height: 1024
           alt: "Card para conhecer o site https://natile.com.br"
