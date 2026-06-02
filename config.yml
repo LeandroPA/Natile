@@ -101,12 +101,14 @@ socials:
       icon: "fa-brands fa-facebook"
       url: "http://facebook.natile.com.br"
       title: "Facebook"
+      text: "/natile.oficial"
       alt: "Facebook"
       target: "_blank"
   - social:
       icon: "fa-brands fa-instagram"
       url: "http://instagram.natile.com.br"
       title: "Instagram"
+      text: "@natile.oficial"
       alt: "Instagram"
       target: "_blank"
 #   - social:
@@ -119,12 +121,14 @@ socials:
       icon: "fa-brands fa-whatsapp"
       url: "http://whatsapp.natile.com.br"
       title: "Whatsapp"
+      text: "(21) 97709-6025"
       alt: "Whatsapp"
       target: "_blank"
   - social:
       icon: "fa-solid fa-envelope"
       url: "mailto:contato@natile.com.br"
       title: "Email: contato@natile.com.br"
+      text: "contato@natile.com.br"
       alt: "contato@natile.com.br"
       target: "_blank"
 

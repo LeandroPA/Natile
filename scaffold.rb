@@ -9,6 +9,42 @@ else
 end
 
 settings = YAML.load_file("config.yml") || {}
+settings["vars"] = {}
+
+if !settings["plugins"].nil?
+  settings["plugins"].each do |plugin|
+    pluginFileName = plugin.keys[0]
+    if File.exist?("./plugins/#{pluginFileName}.rb")
+      require_relative "./plugins/#{pluginFileName}.rb"
+      pluginObject = Object.const_get(pluginFileName).new(plugin.values)
+      settings["vars"][pluginFileName] = pluginObject.execute()
+    end
+  end
+end
+
+if !settings["links"].nil?
+  settings["links"].each_with_index do |link, index|
+    key = link.keys[0]
+    link[key].keys.each do |subKey|
+      settings["links"][index][key][subKey] = Liquid::Template.parse(settings["links"][index][key][subKey]).render(settings)
+    end
+  end
+end
+
+if !settings["socials"].nil?
+  settings["socials"].each_with_index do |link, index|
+    key = link.keys[0]
+    link[key].keys.each do |subKey|
+      settings["socials"][index][key][subKey] = Liquid::Template.parse(settings["socials"][index][key][subKey]).render(settings)
+    end
+  end
+end
+
+settings["title"] = Liquid::Template.parse(settings["title"]).render(settings)
+settings["footer"] = Liquid::Template.parse(settings["footer"]).render(settings)
+settings["tagline"] = Liquid::Template.parse(settings["tagline"]).render(settings)
+settings["name"] = Liquid::Template.parse(settings["name"]).render(settings)
+settings["last_modified_at"] = Time.now.strftime("%Y-%m-%dT%H:%M:%S%z")
 
 #
 source_dir = "./themes/#{settings["theme"] || "default"}"
@@ -41,57 +77,25 @@ Dir.glob("#{source_dir}/**/*").each do |entry|
   end
 end
 
+template_files = [
+  "index.html",
+  "preview.html"
+]
 
-template_file = "#{destination_dir}/index.html"
-if !File.exist?(template_file)
+template_files.each do |file_name|
+  template_file = "#{destination_dir}/#{file_name}"
+  if !File.exist?(template_file)
     raise "Error: #{template_file} file not found."
-end
+  end
 
+  template_content = File.read(template_file)
 
-template_content = File.read(template_file)
+  liquid_template = Liquid::Template.parse(template_content)
 
-settings["vars"] = {}
-if !settings["plugins"].nil?
-  settings["plugins"].each do |plugin|
-    pluginFileName = plugin.keys[0]
-    if File.exist?("./plugins/#{pluginFileName}.rb")
-      require_relative "./plugins/#{pluginFileName}.rb"
-      pluginObject = Object.const_get(pluginFileName).new(plugin.values)
-      settings["vars"][pluginFileName] = pluginObject.execute()
-    end
+  rendered_content = liquid_template.render(settings)
+
+  File.open(template_file, 'w') do |file|
+    file.write(rendered_content)
   end
 end
 
-
-if !settings["links"].nil?
-  settings["links"].each_with_index do |link, index|
-    key = link.keys[0]
-    link[key].keys.each do |subKey|
-      settings["links"][index][key][subKey] = Liquid::Template.parse(settings["links"][index][key][subKey]).render(settings)
-    end
-  end
-end
-
-if !settings["socials"].nil?
-  settings["socials"].each_with_index do |link, index|
-    key = link.keys[0]
-    link[key].keys.each do |subKey|
-      settings["socials"][index][key][subKey] = Liquid::Template.parse(settings["socials"][index][key][subKey]).render(settings)
-    end
-  end
-end
-
-settings["title"] = Liquid::Template.parse(settings["title"]).render(settings)
-settings["footer"] = Liquid::Template.parse(settings["footer"]).render(settings)
-settings["tagline"] = Liquid::Template.parse(settings["tagline"]).render(settings)
-settings["name"] = Liquid::Template.parse(settings["name"]).render(settings)
-settings["last_modified_at"] = Time.now.strftime("%Y-%m-%dT%H:%M:%S%z")
-
-# Parse the Liquid template
-liquid_template = Liquid::Template.parse(template_content)
-
-rendered_content = liquid_template.render(settings)
-
-File.open(template_file, 'w') do |file|
-  file.write(rendered_content)
-end
