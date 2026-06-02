@@ -77,6 +77,8 @@ Dir.glob("#{source_dir}/**/*").each do |entry|
   end
 end
 
+FileUtils.cp("#{source_dir}/images/favicons/favicon.ico", "#{destination_dir}/favicon.ico")
+
 template_files = [
   "index.html",
   "preview.html"
