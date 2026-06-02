@@ -28,7 +28,8 @@ name: "Natilê"
 
 # Tagline section text
 tagline: >-
-    Em breve!
+    Churros Gourmet
+    <br>Em breve!
     <br>🛵 Delivery
     <br>📍 Campo Grande - RJ
 
@@ -36,10 +37,10 @@ og:
     url: https://natile.com.br
     title: Natilê | Churros Gourmet
     image: 
-        url: https://natile.com.br/social-preview.jpg
+        url: https://natile.com.br/social-preview.png
         width: 1200
         height: 630
-    description: Peça seus churros gourmet favoritos com entrega rápida.
+    description: Em breve, a melhor opção de churros gourmet, mais próximo de você! Delivery - Campo Grande - RJ
     locale: pt-br
     type: website
 
@@ -47,10 +48,10 @@ twitter:
     url: https://natile.com.br
     title: Natilê | Churros Gourmet
     image: 
-        url: https://natile.com.br/social-preview.jpg
+        url: https://natile.com.br/social-preview.png
         width: 1200
         height: 630
-    description: Peça seus churros gourmet favoritos com entrega rápida.
+    description: Em breve, a melhor opção de churros gourmet, mais próximo de você. Delivery - Campo Grande - RJ
     card: summary_large_image
     site: natile.com.br
 
@@ -128,7 +129,6 @@ socials:
       icon: "fa-solid fa-envelope"
       url: "mailto:contato@natile.com.br"
       title: "Email: contato@natile.com.br"
-      text: "contato@natile.com.br"
       alt: "contato@natile.com.br"
       target: "_blank"
 

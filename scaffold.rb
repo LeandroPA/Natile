@@ -85,7 +85,8 @@ template_files = [
 template_files.each do |file_name|
   template_file = "#{destination_dir}/#{file_name}"
   if !File.exist?(template_file)
-    raise "Error: #{template_file} file not found."
+    next
+    # raise "Error: #{template_file} file not found."
   end
 
   template_content = File.read(template_file)

@@ -42,11 +42,12 @@ body {
 }
 
 body.preview {
-  /* width: 1200px;
-  height: 630px; */
-  height: 50vh;
+  /* width: 1600px;
+  height: 840px; */
+  width: 1200px;
+  height: 630px;
   display: flex;
-  zoom: 200%;
+  min-height: unset;
 }
 
 a {
@@ -75,6 +76,10 @@ a {
   align-items: center;
 }
 
+.preview .profile {
+  gap: 12px;
+}
+
 .profile-pic-container {
   width: 120px;
   height: 120px;
@@ -90,6 +95,9 @@ a {
 
 .preview .profile-pic-container {
   margin-bottom: 0px;
+  width: 240px;
+  height: 240px;
+  border-width: 8px;
 }
 
 .profile-pic {
@@ -105,10 +113,21 @@ a {
   color: var(--color-primary);
 }
 
+.preview .name {
+  font-size: 56px;
+  margin: 0;
+}
+
 .description {
   font-size: 16px;
   line-height: 1.6;
   color: var(--color-text);
+}
+
+.preview .description {
+  font-size: 32px;
+  /* max-width: 250px; */
+  /* line-height: 3.2; */
 }
 
 .links {
@@ -180,7 +199,8 @@ a {
 .preview .icon-button {
   width: 100%;
   justify-content: start;
-  gap: 12px;
+  gap: 24px;
+  height: 80px;
 }
 
 .icon-button i {
@@ -193,8 +213,13 @@ a {
   /* color: var(--color-secondary); */
 }
 
+.preview .icon-button i {
+  font-size: 48px;
+}
+
 .preview .icon-button span {
-  font-size: 24px;
+  font-size: 48px;
+  line-height: 48px;
 }
 
 /* .icon-button:active {
@@ -222,6 +247,10 @@ a {
   cursor: default;
   text-align: center;
   flex: 1
+}
+
+.preview .background-overlay {
+  border-width: 8px;
 }
 
 /* Style the button that is used to open and close the collapsible content */
