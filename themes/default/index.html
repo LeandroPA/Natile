@@ -44,16 +44,25 @@
   <meta property="twitter:image:height" content="{{ item.height }}">
   <meta property="twitter:image:alt" content="{{ item.alt }}">
 {% endfor %}
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"{{ title }}",
+    "url":"{{ og.url }}",
+    "logo":"{{ og.images[1].url }}"
+  }
+  </script>
 
   <link rel="apple-touch-icon" sizes="180x180" href="./images/favicons/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicons/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="./images/favicons/favicon-16x16.png">
   <link rel="icon" type="image/svg+xml" href="./images/favicons/favicon.svg" />
-  <link rel="manifest" href="./images/favicons/site.webmanifest">
-
+  <link rel="icon" href="./images/favicons/favicon.ico">
   <link rel="shortcut icon" href="./images/favicons/favicon.ico">
   <meta name="apple-mobile-web-app-title" content="{{ title }}">
   <meta name="application-name" content="{{ title }}">
+  <link rel="manifest" href="./images/favicons/site.webmanifest">
 
   <link rel="stylesheet" href="./styles.css" />
 </head>
