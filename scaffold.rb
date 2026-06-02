@@ -81,15 +81,6 @@ if !settings["socials"].nil?
   end
 end
 
-# if !settings["socials"].nil?
-#   settings["socials"].each_with_index do |link, index|
-#     settings["socials"][index]["social"]["icon"] = Liquid::Template.parse(settings["socials"][index]["social"]["icon"]).render(settings)
-#     settings["socials"][index]["social"]["url"] = Liquid::Template.parse(settings["socials"][index]["social"]["url"]).render(settings)
-#     settings["socials"][index]["social"]["alt"] = Liquid::Template.parse(settings["socials"][index]["social"]["alt"]).render(settings)
-#     settings["socials"][index]["social"]["title"] = Liquid::Template.parse(settings["socials"][index]["social"]["title"]).render(settings)
-#   end
-# end
-
 settings["title"] = Liquid::Template.parse(settings["title"]).render(settings)
 settings["footer"] = Liquid::Template.parse(settings["footer"]).render(settings)
 settings["tagline"] = Liquid::Template.parse(settings["tagline"]).render(settings)
