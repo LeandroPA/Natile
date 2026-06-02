@@ -34,7 +34,7 @@ tagline: >-
     <br>📍 Campo Grande - RJ
 
 og:
-    url: natile.com.br
+    url: https://natile.com.br
     title: Natilê | Churros Gourmet
     images:
         - url: https://natile.com.br/images/social-preview.png
@@ -50,7 +50,7 @@ og:
     type: website
 
 twitter:
-    url: natile.com.br
+    url: https://natile.com.br
     title: Natilê | Churros Gourmet
     images:
         - url: https://natile.com.br/images/social-preview.png
