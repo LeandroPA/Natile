@@ -57,10 +57,6 @@ twitter:
           width: 1200
           height: 630
           alt: "Card para conhecer o site https://natile.com.br"
-        - url: https://natile.com.br/images/og-image-square-v1.png
-          width: 1024
-          height: 1024
-          alt: "Card para conhecer o site https://natile.com.br"
     description: Em breve, a melhor opção de churros gourmet, mais próximo de você. Delivery - Campo Grande - RJ
     card: summary_large_image
     site: natile.com.br
