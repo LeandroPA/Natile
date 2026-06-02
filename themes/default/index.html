@@ -44,17 +44,12 @@
   <meta name="twitter:description" content="{{ twitter.description }}">
 {% for item in twitter.images %}
   <meta name="twitter:image" content="{{ item.url }}" />
-  <meta name="twitter:image:url" content="{{ item.url }}" />
-  <meta name="twitter:image:secure_url" content="{{ item.url }}" />
-  <meta name="twitter:image:type" content="image/png">
-  <meta name="twitter:image:width" content="{{ item.width }}">
-  <meta name="twitter:image:height" content="{{ item.height }}">
   <meta name="twitter:image:alt" content="{{ item.alt }}">
 {% endfor %}
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
-    "@type":"Organization",
+    "@type":"FoodEstablishment",
     "name":"{{ title }}",
     "url":"{{ og.url }}",
     "image": "{{ og.url }}/images/og-image-v1.png",
