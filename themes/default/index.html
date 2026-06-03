@@ -99,6 +99,7 @@
         </div>
       </div>
   
+      {% if links %}
       <div class="links">
         {% for item in links %}
           {% if item.link %}
@@ -119,6 +120,7 @@
           {% endif %}
         {% endfor %}
       </div>
+      {% endif %}
   
       <footer class="footer">
         {{ footer }}
